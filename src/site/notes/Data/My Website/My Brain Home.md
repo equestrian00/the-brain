@@ -11,5 +11,5 @@ Welcome to my brain! I'm Equestrian, and I wear many hats:
 In this vault, I may or may not publish useful things. Oops.
 
 > [!info] Lecture Notes
-> If you are a fellow classmate, I welcome you to this website and offer you this tool of navigation — [[published lecture notes\|published lecture notes]]. 
+> If you are a fellow classmate, I welcome you to this website and offer you this tool of navigation — [[Data/My Website/published lecture notes\|published lecture notes]]. 
 
