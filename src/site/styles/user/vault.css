@@ -1619,3 +1619,5 @@ div:has(> [data-callout="timeline"]) + div:not(> [data-callout="timeline"]) {
 .b-embed h6 {
   font-size: 10px;
 }
+
+}
