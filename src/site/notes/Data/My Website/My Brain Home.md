@@ -4,7 +4,7 @@
 
 
 Welcome to my brain! I'm Equestrian, and I wear many hats:
-- college student working on her degree in Physical Therapist Assisting
+- college student working on her degree in Physical Therapist Assistant
 - hobbyist note-taker and organizational procrastinator
 - reader of too many books to be sane
 
