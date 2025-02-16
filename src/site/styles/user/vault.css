@@ -1,11 +1,3 @@
-/* FOOTNOTE */
-
-/* .bible .cm-hmd-internal-link, .internal-link {
-    position: relative;
-    top: -0.5em;
-    font-size: 12px;
-} */
-
 .cm-formatting:not(.cm-formatting-code-block):not(.cm-formatting-hashtag) {
     display: show;
 }
@@ -16,61 +8,14 @@
     color: var(--text-muted) !important;
 }
 
-.cm-footref::before {
-    content: "✎"; /* ⋞ ✎「」 ╰ */
-    display: none;
-    font-size: 8px;
-    margin-right: 1px;
-    margin-left: 3px;
-    color: var(--text-muted) !important;
-}
-
-.cm-footref::after {
-    content: "";
-    display: none;
-}
-
-/* ============================================================================= */
-
 .daily .inline-title {
     display: none !important;
 }
-
-.workout-log-button {
-    padding: 12px;
-    background-color: rgb(0, 0, 0, 0) !important;
-    color: white;
-    border: none !important;
-    border-radius: 4px !important;
-    cursor: pointer;
-    font-size: 14px;
-    box-shadow: none !important;
-}
-.workout-log-button:hover {
-    background-color: #45a049;
-}
-
-/* ================================================ */
 
 .cm-highlight {
     padding: 0px 5px; /* Extend 1px on both sides */
     border-radius: 6px; /* Adjust this value for more or less rounded corners */
 }
-
-/* ================================================ */
-
-
-/* MENTIONS LINK BUTTON */
-
-.search-result-file-match-replace-button {
-    display: flex;
-    padding: 3px 25px 3px 25px;
-    background-color: var(--background-primary-alt) !important;
-}
-
-/* ================================================ */
-
-/* NOTE TITLES */
 
 body {
     --inline-title-variant: small-caps;
@@ -79,10 +24,6 @@ body {
 .inline-title {
     color: #C8C5BC;
 }
-
-/* ================================================ */
-
-/* LINKS */
 
 .markdown-embed-title {
     font-variant: all-small-caps;
@@ -104,7 +45,6 @@ body {
 .internal-link {
     /* font-variant: all-small-caps; */
     font-weight: 400;
-    
 }
 
 .cm-hmd-external-link {
@@ -122,92 +62,14 @@ body {
   padding-right: 0px;
 }
 
-/* ================================================ */
-
-/* NAV BUTTONS */
-
 .nav-buttons-container {
   justify-content: center;
-}
-
-/* ================================================ */
-
-
-/* Startpage pin modifications */
-
-.workspace-tab-header:has(.mod-pinned) {
-  max-width: 75px !important;
-
-  /*Hide the title of pinned tabs */
-  & .workspace-tab-header-inner-title {
-    display: flex;
-  }
-  
-/* Hide unpin button */
-div[aria-label="Unpin"] {
-    display: flex;
-}
-
-
-.linker-suffix-icon {
-    font-size: 8px;
-}
-
-.virtual-link {
-    box-shadow: inset 0 -2px 0 var(--interactive-hover);
-    /* border-bottom: 1px solid var(--text-selection); */
 }
 
 .mb-button.text > button {
     padding: 0px;
     height: 20px;
     color: var(--text-color);
-}
-
-.svelte-8h9y9 {
-	display: inline !important;
-	text-align: center;
-}
-
-.projects--board--column.svelte-ngl1kp {
-	display: none;
-}
-
-.clickable-icon.svelte-r9r5oc.icon-sm {
-	opacity: 0.1;
-}
-
-.container.svelte-3iuity.svelte-3iuity {
-	opacity: 0.1;
-	display: flex;
-}
-
-.container.svelte-3iuity.svelte-3iuity:hover,
-.container.svelte-3iuity.svelte-3iuity:focus-within {
-	opacity: 0.4;
-	transition: opacity 300ms ease-in-out, max-height 200ms;
-	transition-delay: 0.5s;
-	max-height: 100px; 
-}
-
-.svelte-10iwx4b {
-	font-variant-caps: all-small-caps;
-	font-size: 20px;
-	font-style: italic;
-}
-
-.projects--board--column {
-	background-color: rgb(0,0,0,0);
-	border: none;
-}
-
-.projects--board--card {
-	background-color: var(--background-secondary);
-}
-
-
-div.svelte-8h9y9 {
-    overflow: auto !important;
 }
 
 select, .dropdown {
@@ -218,153 +80,9 @@ select, .dropdown:hover {
     box-shadow: none;
 }
 
-#cMenuToolbarModalBar.top :is(.cMenuToolbarCommandItem, button[class^=cMenuToolbarCommandsubItem]):not(.cMenuToolbar-Divider-Line) {
-    opacity: 1 !important;
-}
-
-button.mod-cta {
-    background-color: var(--text-muted);
-    filter: brightness(1);
-    --text-color: var(--background-primary);
-}
-
 input[data-task="?"]:checked, li[data-task="?"]>input:checked, li[data-task="?"]>p>input:checked {
     background-color: var(--text-faint);
     border-color: var(--text-faint);
-}
-
-.kanban-plugin__item {
-   margin-bottom: 5px;
-   border-radius: 10px;
-   /* clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 95% 100%, 85% 90%, 80% 100%, 75% 90%, 65% 100%, 0% 100%); */ /* Torn bottom edge */
-
-}
-
-.kanban-plugin__lane:not(.will-prepend) .kanban-plugin__lane-items {
-   border: none;
-   padding: 0;
-   background-color: rgb(0, 0, 0, 0);
-   margin: 10px;
-}
-
-
-body .kanban-plugin__item-button-wrapper, body .kanban-plugin__item-form {
-   border: none;
-   background-color: rgb(0, 0, 0, 0);
-}
-
-.kanban-plugin__lane-grip>svg {
-   display: none;
-}
-
-.kanban-plugin__lane .kanban-plugin__lane-settings-button {
-   opacity: 1;
-}
-
-.kanban-plugin__lane-title-count {
-   opacity: 0.3;
-}
-
-.kanban-plugin__icon>svg {
-   opacity: 0.03;
-}
-
-.status-bar {
-   width: 205px;
-}
-
-.kanban-plugin__item.has-tag-test {
-    --tag-text-rgb: 226, 216, 210;
-    --tag-background-rgb-test: 255, 3, 37;
-
-    border-color: rgba(var(--tag-background-rgb-test), 0.5) !important;
-    border-width: 5px;
-    border-style: double; /*double or ridge*/
-    border-radius: 15px;
-}
-
-/* .kanban-plugin__item.has-tag-test::before {
-    content: "";
-    position: absolute;
-    height: 20px;
-    width: 12px;
-    top: 0px;
-    left: 195px;
-    background-color: rgba(var(--tag-background-rgb-test));
-    color: white;
-    font-size: 10px;
-    padding: 5px;
-    border-radius: 0px;
-    font-weight: bold;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%); 
-} */
-
-.kanban-plugin__item.has-tag-EXS110, .kanban-plugin__item.has-tag-EXS120 {
-    --tag-text-rgb: 226, 216, 210;
-    --tag-background-rgb: 166, 96, 16;
-
-    border-color: rgba(var(--tag-background-rgb), 0.5);
-
-    .kanban-plugin__item-title-wrapper {
-        background-color: rgba(var(--tag-background-rgb), 0.6);
-        color: rgba(var(--tag-text-rgb), 1);
-    }
-}
-
-.kanban-plugin__item.has-tag-PTA120 {
-    --tag-text-rgb: 226, 216, 210;
-    --tag-background-rgb: 75, 17, 78;
-
-    border-color: rgba(var(--tag-background-rgb), 1);
-
-    .kanban-plugin__item-title-wrapper {
-        background-color: rgba(var(--tag-background-rgb), 1);
-        color: rgba(var(--tag-text-rgb), 1);
-    }
-}
-
-.kanban-plugin__item.has-tag-PTA128 {
-    --tag-text-rgb: 226, 216, 210;
-    --tag-background-rgb: 153, 21, 114;
-
-    border-color: rgba(var(--tag-background-rgb), 1);
-
-    .kanban-plugin__item-title-wrapper {
-        background-color: rgba(var(--tag-background-rgb), 0.4);
-        color: rgba(var(--tag-text-rgb), 1);
-    }
-}
-
-.kanban-plugin__item.has-tag-SOC123 {
-    --tag-text-rgb: 226, 216, 210;
-    --tag-background-rgb: 25, 96, 158;
-
-    border-color: rgba(var(--tag-background-rgb), 1);
-
-    .kanban-plugin__item-title-wrapper {
-        background-color: rgba(var(--tag-background-rgb), 0.5);
-        color: rgba(var(--tag-text-rgb), 1);
-    }
-}
-
-.kanban-plugin__item.has-tag-BIO124,  .kanban-plugin__item.has-tag-BIO123 {
-    --tag-text-rgb: 226, 216, 210;
-    --tag-background-rgb: 24, 135, 69;
-
-    border-color: rgba(var(--tag-background-rgb), 1);
-
-    .kanban-plugin__item-title-wrapper {
-        background-color: rgba(var(--tag-background-rgb), 0.5);
-        color: rgba(var(--tag-text-rgb), 1);
-    }
-}
-
-
-/* Properties of the virtual link when not hovered */
-.virtual-link.glossary-entry a {
-    color: var(--link-color);
-    font-variant: normal;
-    font-weight: normal;
 }
 
 .def-decoration {
@@ -375,311 +93,10 @@ body .kanban-plugin__item-button-wrapper, body .kanban-plugin__item-form {
     display: flex;
 }
 
-#cMenuToolbarModalBar.top :is(.cMenuToolbarCommandItem, button[class^=cMenuToolbarCommandsubItem]):not(.cMenuToolbar-Divider-Line) {
-    opacity: 0.5;
-    color: var(--text-muted);
-}
-
 .clickable-icon {
     color: var(--text-muted);
     opacity: 0.5;
 }
-
-/* HABIT TRACKER */
-
-.habit-tracker__cell {
-    font-family: none;
-}
-
-.habit-tick--true + .habit-tick--true:has(+ .habit-tick--false):before, .habit-tick--true + .habit-tick--true:last-child:before {
-    color:var(--background-modifier-border-focus);
-    text-align: center;
-    line-height: 16px;
-}
-
-/* TABS */
-
-.tab-nav-item {
-    color: var(--tab-nav-item-active-color) !important;
-    font-size: 15px !important;
-    font-variant: small-caps;
-    font-weight: normal !important;
-    background-color: rgb(182, 173, 168, 0.1);
-    border-radius: 5px;
-    margin: 3px;
-}
-
-.tab-container {
-    border: solid 1px !important;
-    border-radius: 5px;
-    border-color: rgb(182, 173, 168, 0.1) !important;
-    margin: 10px 0px 10px 0px;
-    padding: 5px 0px 0px 5px;
-}
-
-.tab-content {
-    margin: -10px 0px 0px 0px;
-}
-
-.tab-nav-item-active {
-    background-color: rgb(182, 173, 168, 0.2);
-}
-
-/* PROJECTS */
-
-.projects--gallery--card .field-label .setting-item-description {
-   display: none;
-}
-
-/* GOOGLE CALENDAR */
-
-/* .container#calendar-container {
-   padding: 0 0 0;
-   margin-top: -20px;
-   margin-bottom: -20px
-}
-
-.container#calendar-container .day {
-   font-size: 0.7em;
-}
-
-.dot-container.svelte-q3wqg9 {
-   max-height: 9px;
-   overflow: scroll;
-}
-
-*/
-
-/* CALENDAR */
-
-#calendar-container {
-  --color-background-heading: transparent;
-  --color-background-day: transparent;
-  --color-background-weeknum: transparent;
-  --color-background-weekend: transparent;
-
-  --color-dot: var(--text-muted);
-  --color-arrow: var(--text-muted);
-  --color-button: var(--text-muted);
-
-  --color-text-title: var(--text-normal);
-  --color-text-heading: var(--text-muted);
-  --color-text-day: var(--text-normal);
-  --color-text-today: var(--interactive-accent);
-  --color-text-weeknum: var(--text-muted);
-}
-
-.container#calendar-container .day {
-   font-size: 0.7em;
-}
-
-.dot-container.svelte-q3wqg9 {
-   max-height: 9px;
-   overflow: scroll;
-}
-
-.container#calendar-container .calendar .today {
-   color: var(--italic-color);
-   font-weight: 500;
-   border: solid 1px;
-}
-
-.container#calendar-container .month, .year {
-   color: var(--italic-color) !important;
-   font-weight: 500;
-}
-
-.container#calendar-container .day.adjacent-month, .reset-button, .arrow {
-   color: var(--italic-color);
-   opacity: 0.3;
-}
-
-.container#calendar-container .calendar {
-  & > thead > tr:first-of-type {
-    & > th:nth-child(1) {
-      font-size: 0.4em;
-    }
-    & > th:nth-child(2) {
-      font-size: 0.4em;
-    }
-    & > th:nth-child(3) {
-      font-size: 0.4em;
-    }
-    & > th:nth-child(4) {
-      font-size: 0.4em;
-    }
-    & > th:nth-child(5) {
-      font-size: 0.4em;
-    }
-    & > th:nth-child(6) {
-      font-size: 0.4em;
-    }
-    & > th:nth-child(7) {
-      font-size: 0.4em;
-    }
-  }
-}
-
-/* BETTER COMMAND PALETTE */
-
-.better-command-palette-title {
-   display: none;
-}
-
-
-/* OMNISEARCH 
-Cleaner and less jank
-https://github.com/replete/obsidian-minimal-theme-css-snippets
-*/
-
-.omnisearch-modal.prompt {
-
-    .prompt-results {
-
-    }
-    
-    :has(> .omnisearch-result__title-container) {
-        width:100%;
-    }
-
-    .omnisearch-result__title {
-    display:flex;
-    width:100%;
-    font-size:1rem;
-    font-weight:500;
-    margin-bottom:3px;
-
-        :has(svg) {
-            display:none;
-            margin-left:-2px;
-            transform:scale(0.9) translate(0, 2px)
-        }
-    }
-
-    .omnisearch-result {
-    }
-
-    .omnisearch-result__folder-path {
-        /* font-style:italic; */
-        font-size:11px;
-        margin-top:-5px;
-        margin-bottom:3px;
-
-        /* > span {
-            background: var(--bg3);
-            padding:0px 4px;
-            border-radius:2px;
-
-            &::before {
-                content:'/';
-            }
-        } */
-
-        :has(svg) {
-            /* display:none; */
-            /* icon resized inline with text: */
-            transform: scale(0.7) translate(0,2px);
-            transform-origin: left center;
-            margin-right:-7px;
-        }
-    }
-
-    .omnisearch-result__extension {
-        display:none;
-        transform: translate(-4px,2px);
-        font-weight:500;
-    }
-
-    .omnisearch-result__counter {
-        margin-left: auto;
-
-        /* &::before {
-            content:'('
-        }
-        &::after {
-            content:')'
-        } */
-    }
-
-    .omnisearch-result__body {
-        margin-left:0;
-        font-style:italic;
-    }
-
-    .omnisearch-result {
-        padding-top:var(--size-4-3);
-        padding-bottom:var(--size-4-3);
-        margin-top:calc( (-1 * var(--size-4-3)) / 2);
-    }
-
-    .omnisearch-highlight {
-        text-decoration-color:var(--accent-color);
-        text-underline-offset:3px;
-        text-decoration-thickness:1px;
-    }
-    
-}
-
-
-/* SPACED REPETITION */
-.sr-tree-stats-count.sr-bg-blue {
-   display: none;
-}
-
-.sr-deck-list .sr-tree-stats-count {
-   color: #BCC8C7 !important;
-}
-
-.sr-deck-list .sr-header-stats-container {
-    display: none !important;
-}
-
-.sr-deck-list .sr-header {
-    border-bottom: 0px solid var(--hr-color) !important;
-}
-
-.sr-bg-green {
-    background-color: #113b3b !important;
-}
-
-.sr-bg-blue {
-    background-color: #227777 !important;
-}
-
-.sr-bg-red {
-    background-color: #1E1E24 !important;
-}
-
-.sr-deck-list .sr-tree-item-row:hover .sr-bg-red, sr.response-button.sr-bg.red:hover {
-    background-color: #1E1E24 !important;
-}
-
-.sr-deck-list .sr-tree-item-row:hover .sr-bg-green, sr.response-button.sr-bg.green:hover {
-    background-color: #113b3b !important;
-}
-
-.sr-deck-list .sr-tree-item-row:hover .sr-bg-blue, sr.response-button.sr-bg.blue:hover {
-    background-color: #227777 !important;
-}
-
-.sr-deck-list { 
-    container: sr-deck-list / inline-size;
-}
-
-.sr-title {
-    font-size: 30px !important;
-    margin-bottom: -10px;
-
-&::after {
-    content:' ';
-    display:block;
-    height:2px;
-    width:100cqw;
-    background-color: var(--tab-outline-color);
-    margin-top:20px;
-}
-
-/* background:linear-gradient(to right, var(--tab-outline-color), transparent); */
 
 body:has(*.writing) {
     --middle-color: var(--text-italic);
@@ -724,8 +141,6 @@ body:has(*.writing) {
     opacity: 0.1;
 }
 
-/* COLLECTIONS */
-
 .nav-files-container > div > .nav-folder .is-collapsed::after {
   display: none !important;
 }
@@ -755,23 +170,6 @@ body:has(*.writing) {
   font-size: 14px;
 }
 
-
-/* font-size: var(--font-adaptive-smallest); ...   left: var(--layout-margin); /*
-
-/* =============================================== */
-
-
-/* Minimalist Colored Folders (title only)
-
-Adapted from Lithou and pbhopeful by prrtzt
-
-This will allow you to add colors to the top level folders in your vault.
-Only the top level folders will have a background, not their content.
-Colors have to be in R, G, B, which allows you to apply an opacity setting. You can change all of that below.
-
-
-*/
-
 :root{
     /* Folder colors */
     --Fold1: 195, 173, 168;
@@ -783,8 +181,6 @@ Colors have to be in R, G, B, which allows you to apply an opacity setting. You 
     --foldBgPad: 3px;
     --foldBgMar: 5px;
 }
-
-/* Folder Background Colors */        
 
 .nav-files-container > div > .nav-folder:nth-child(9n+2) > .nav-folder-title {
     background-color: rgba(var(--Fold1), var(--bgFoldOpacity));
@@ -836,8 +232,6 @@ Colors have to be in R, G, B, which allows you to apply an opacity setting. You 
     font-color: 196, 238, 238;
 }
 
-/* FLOAT TO THE SIDE */
-
 .callout[data-callout-metadata*="float"] .callout-content {
     padding: 0;
     margin: 0px;
@@ -847,7 +241,6 @@ Colors have to be in R, G, B, which allows you to apply an opacity setting. You 
     padding: 0;
     margin: 0px;
 }
-
 
 .is-live-preview .callout[data-callout-metadata*="float"] {
   float: unset;
@@ -903,9 +296,6 @@ Colors have to be in R, G, B, which allows you to apply an opacity setting. You 
   padding: 0;
   display: none;
 }
-
-
-/* ANNOTATION CALLOUT */
 
 .callout[data-callout^="anno"] {
    padding: 0px 10px 5px 10px;
@@ -984,8 +374,6 @@ Colors have to be in R, G, B, which allows you to apply an opacity setting. You 
   display: none;
 }
 
-/* HARR, IMAGE FLOATING USING CALLOUT */
-
 .callout[data-callout^="figure"] {
   padding: .5em;
   margin: .5em;
@@ -1018,8 +406,6 @@ Colors have to be in R, G, B, which allows you to apply an opacity setting. You 
   width: 50%;
 }
 
-/* ================================================= */
-
 .callout[data-callout="gemini"] {
   background-color: var(--background-secondary);
 }
@@ -1041,12 +427,6 @@ Colors have to be in R, G, B, which allows you to apply an opacity setting. You 
   opacity: 0.6;
   display: none;
 }
-
-/* .callout[data-callout="blank"] .callout-title .callout-title-inner {
-  display: none;
-} */
-
-/* ============================================== */
 
 .callout[data-callout="dailythings"] {
   --icon-size: 20px;
@@ -1070,19 +450,9 @@ Colors have to be in R, G, B, which allows you to apply an opacity setting. You 
   font-variant-caps: none;
 }
 
-/* .callout[data-callout="dailythings"] .callout-content p:nth-child(1) {
-  font-style: normal;
-  font-variant-caps: none;
-  text-align: center;
-  color: var(--color-green);
-  filter: brightness(0.8);
-} */
-
 .callout[data-callout="dailythings"] .callout-content p:first-child {
   margin-top: 0;
 }
-
-/* ============================================ */
 
 .callout[data-callout="dh"] {
   --callout-padding: var(--size-4-3);
@@ -1119,13 +489,6 @@ Colors have to be in R, G, B, which allows you to apply an opacity setting. You 
   font-size: 15px;
 }
 
-/* ============================================================== */
-
-/*
-author: Adonis
-source: https://discord.com/channels/686053708261228577/702656734631821413/1040111314963546142
-*/
-
 .callout[data-callout="quotesp"] {
   --callout-padding: var(--size-4-3);
   --icon-size: 20px;
@@ -1158,8 +521,6 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/10401
   font-size: 12px;
 }
 
-/* ================================================================== */
-
 .callout[data-callout-metadata*="hideT"] {
    .callout-title {
 	display: none;
@@ -1189,15 +550,11 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/10401
    }
 }
 
-/* NO ICON */
-
 .callout[data-callout^="no-icon"] {
    .callout-icon {
 	display: none
    }
 }
-
-/* HEADER */
 
 .callout[data-callout-metadata*="header"] {
    .callout-title-inner {
@@ -1208,9 +565,6 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/10401
 .callout[data-callout-metadata*="header"] {
     text-align: center;
 }
-
-
-/* OUTLINE CALLOUT */
 
 .callout[data-callout-metadata*="outline"] .callout-title {
   background-color: var(--background-primary);
@@ -1246,10 +600,6 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/10401
   margin-bottom: -25px;
 }
 
-/* =============================================== */
-
-/* LABEL CALLOUT */
-
 .callout[data-callout-metadata*="label"] {
   --block-spacing: 1rem;
   --speaker-block-width: 20%;
@@ -1259,7 +609,6 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/10401
   grid-template-columns: var(--speaker-block-width) calc(100% - var(--speaker-block-width));
   background-color: var(--background-primary);
   border: none;
-  
 }
 
 .callout[data-callout-metadata*="label"] .callout-title {
@@ -1289,10 +638,6 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/10401
   margin-bottom: 0px;
 }
 
-/* ============================================== */
-
-/* CALLOUT ADJUSTMENTS */
-
 .callout[data-callout-metadata*="outline"] .callout-content {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -1301,10 +646,6 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/10401
 .callout .callout-content {
   margin-top: 10px;
 }
-
-/* ================================================ */
-
-/* TIMELINE CALLOUT */
 
 body {
   --timeline-title-color: var(--text-normal);
@@ -1390,7 +731,6 @@ body {
   }
 }
 
-/* Stacking multiple timelines */
 div:not(:has(> [data-callout="timeline"])) + div > [data-callout="timeline"] {
   margin-top: var(--p-spacing);
 }
@@ -1424,10 +764,6 @@ div:has(> [data-callout="timeline"]) + div:not(> [data-callout="timeline"]) {
   --timeline-dot-color: var(--color-pink);
 }
 
-/* =============================================== */
-
-/* CALLOUT TITLES */
-
 .callout-title-inner {
     font-variant: all-small-caps;
     font-weight: normal;
@@ -1440,99 +776,6 @@ div:has(> [data-callout="timeline"]) + div:not(> [data-callout="timeline"]) {
 .callout[data-callout-metadata*="icon"] .callout-title {
   font-variant-caps: all-small-caps;
   font-family: "Playwright USA Traditional"
-}
-
-/* POLAROID */
-
-.callout[data-callout^="polaroid"] {
-    background: white;
-    border: 2px solid #e0e0e0;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    width: 200px;
-    margin: 20px auto;
-    position: relative;
-    text-align: center;
-}
-
-.callout[data-callout^="polaroid"] .callout-title {
-   display: none;
-}
-
-.callout[data-callout^="polaroid"]::after {
-    content: "";
-    display: block;
-    width: 80%;
-    height: 10px;
-    background: white;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    bottom: -15px;
-    left: 10%;
-    transform: rotate(-3deg);
-}
-
-.callout[data-callout^="polaroid"] {
-    font-size: 1.2em;
-    font-family: "Lucida Handwriting", cursive;
-    margin-bottom: 10px;
-}
-
-/* STICKY NOTE */
-
-/* Calendar grid styling */
-.calendar-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 4px;
-    background-color: var(--background-primary);
-    padding: 10px;
-}
-
-/* Styling the month and year heading */
-.calendar-container h3 {
-    font-size: 1.8rem;
-    color: var(--text-accent);
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.calendar-container {
-    padding: 12px;
-    background: var(--background-modifier-border);
-    border-radius: 8px;
-    margin-bottom: 32px;
-    border: 0px solid var(--text);
-}
-
-.calendar-cell {
-    background: var(--background-secondary);
-    border: 1px solid var(--background-modifier-border);
-    padding: 8px;
-    min-height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.empty {
-    background: transparent;
-    border: none;
-}
-
-.day-number {
-    font-weight: bold;
-    color: var(--background-modifier-border);
-    margin-bottom: 8px;
-}
-
-.highlighted-day {
-    border: var(--color-cyan) double;
 }
 
 /* Default task card style */
@@ -1618,6 +861,4 @@ div:has(> [data-callout="timeline"]) + div:not(> [data-callout="timeline"]) {
 
 .b-embed h6 {
   font-size: 10px;
-}
-
 }
